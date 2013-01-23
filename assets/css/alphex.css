@@ -49,6 +49,10 @@ h2 {
 	font-size: 24px;
 }
 
+h1 a {
+	color:#666;
+}
+
 .meny {
 	display: none;
 	padding: 20px;
