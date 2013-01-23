@@ -22,16 +22,16 @@ body {
 
 body {
 	background-color: #222;
-	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);
+	/*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);*/
 	background-repeat: repeat;
 
-	font-family: 'Lato', Helvetica, sans-serif;
+	font-family: 'Monda', Helvetica, sans-serif;
 	font-size: 16px;
 	color: #222;
 }
 
 a {
-	color: #c2575b;
+	color: #999;
 	text-decoration: none;
 
 	-webkit-transition: 0.15s color ease;
@@ -41,7 +41,7 @@ a {
 	        transition: 0.15s color ease;
 }
 	a:hover {
-		color: #f76f76;
+		color: #333;
 	}
 
 h1, 
@@ -57,7 +57,7 @@ h1 a {
 	display: none;
 	padding: 20px;
 	overflow: auto;
-	background: #333;
+	background: #ccc;
 	color: #eee;
 
 	-webkit-box-sizing: border-box;
@@ -78,6 +78,14 @@ h1 a {
 				content: '-';
 				margin-right: 5px;
 				color: rgba( 255, 255, 255, 0.2 );
+			}
+
+			.meny li a {
+				color:#333;
+			}
+
+			.meny li a:hover {
+				color:#999;
 			}
 
 /**
@@ -133,7 +141,7 @@ h1 a {
  * Main contents area
  */
 .contents {
-	background: #eee;
+	background: #fff;
 	padding: 40px 100px;
 	width: 100%;
 	height: 100%;
@@ -171,6 +179,7 @@ h1 a {
 
 article h2 {
 	margin-bottom:5px;
+	margin-top:20px;
 }
 
 div.work {
