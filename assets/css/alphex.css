@@ -95,7 +95,7 @@ h1 a {
 	position: absolute;
 	z-index: 10;
 
-	border: 30px solid transparent;
+	border: 20px solid transparent;
 
 	-webkit-transition: opacity 0.4s ease 0.4s; 
 	   -moz-transition: opacity 0.4s ease 0.4s; 
@@ -105,9 +105,9 @@ h1 a {
 }
 	.meny-left .meny-arrow {
 		left: 20px;
-		top: 50px;
+		top: 55px;
 		margin-top: -16px;
-		border-left: 30px solid #333;
+		border-left: 20px solid #333;
 	}
 	.meny-right .meny-arrow {
 		right: 14px;
