@@ -1,0 +1,126 @@
+<!doctype html>  
+<html lang="en">
+	
+	<head>
+		<meta charset="utf-8">
+		
+		<title>Alphex Information Services | Home & Featured Work</title>
+
+		<meta name="description" content="Providing data visualization via transformative mediums for over a decade.  Specializing in Desktop & Mobile web applicaiton development, content management systems, marketing & brand communication programs, graphic design, branding & identity and information architecture for web application development.">
+		<meta name="author" content="Duran Goodyear">
+		<meta name="viewport" content="width=800, user-scalable=no">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/assets/css/alphex.css">
+	</head>
+	
+	<body>
+
+		<div class="meny">
+			<ul>
+				<li><a href="/">Home</a></li>
+				<li><a href="/services">Services</a></li>
+				<li><a href="/about">About</a></li>
+				<li><a href="/contact">Contact</a></li>
+				<li><a href="/partners">Partners</a></li>
+				<li><a href="/social">Social</a></li>
+			</ul>
+		</div>
+
+		<div class="meny-arrow"></div>
+
+		<div class="contents">
+			<article>
+				<h1>Alphex Information Services</h1>
+				<p>Providing Information &amp; Data presentation management services for over a decade.</p>
+				<p>Specializing in Content Management Systems, Brand &amp; Marketing Presentation, Mobile &amp; Desktop Web Applications, Information Architecture and web technology consultation services.</p>
+
+				<h2>Featured Work</h2>
+				<div class="work">
+					<div class="workitem">
+						<img src="/assets/images/crsf.png" />
+						<div class="workwords">
+							<h3>Cal Ripken, Sr. Foundation Portal</h3>
+							<p><a href="http://crsfportal.org" target="_blank">http://crsfportal.org</a></p>
+							<p>Contracted to construct the members information portal for the Cal Ripken, Sr. Foundation via a 3rd party. Built with Drupal 7 using media embeds from Brightcove. Significant portion of content located behind a members login. Drupal CMS allows the Foundation's staff to easily manage all of the content on the site and embed videos as needed.</p>
+						</div>
+					</div>
+					<div class="workitem">
+						<img src="/assets/images/lucifer.png" />
+						<div class="workwords">
+							<h3>Saint Lucifer Spice Shopify Store</h3>
+							<p><a href="http://saintluciferspice.com" target="_blank">http://saintluciferspice.com</a></p>
+							<p>Built on Shopify for a small Philadelphia spice creator. Provided code &amp; consulting for the construction of a custom Shopify theme for this store, based on delivered graphic design.</p>
+						</div>
+					</div>
+					<div class="workitem">
+						<img src="/assets/images/eddie.png" />
+						<div class="workwords">
+							<h3>Eddies Rod &amp; Custom Business Website</h3>
+							<p><a href="http://eddiesrodandcustom.com/" target="_blank">http://eddiesrodandcustom.com</a></p>
+							<p>Build on Drupal 7, this is the site for an award winning auto body and custom car builder in Missouri.  The Drupal 7 CMS allows the owners of the shop to upload new content when ever they have a new project, or when ever there's any news they wish to share with the world.</p>
+						</div>
+					</div>
+					<div class="workitem">
+						<img src="/assets/images/klip.png" />
+						<div class="workwords">
+							<h3>Klip Collective</h3>
+							<p><a href="http://klip.tv/" target="_blank">http://klip.tv</a></p>
+							<p>Built on Drupal 6 for Klip Collective to show case their award winning visual work.  The Drupal 6 CMS allows Klip's team to blog and update their content and news when ever they want, making it easy to share their kick ass work while on the road, or during production.</p>
+						</div>
+					</div>
+					<div class="workitem">
+						<img src="/assets/images/monogram.png" />
+						<div class="workwords">
+							<h3>Monogram</h3>
+							<p><a href="http://monogram.tv/" target="_blank">http://monogram.tv</a></p>
+							<p>Build on Drupal 7 for Monogram's marketing and business needs, this Drupal 7 CMS allows the Monogram team to update the content of their site at any time easily.  Greatly increasing the ability to market their work as it launches.</p>
+						</div>
+					</div>
+				</div>
+			</article>
+		</div>
+
+		<script src="/assets/js/meny.min.js"></script>
+		<script>
+			// Create an instance of Meny
+			var meny = Meny.create({
+				// The element that will be animated in from off screen
+				menuElement: document.querySelector( '.meny' ),
+
+				// The contents that gets pushed aside while Meny is active
+				contentsElement: document.querySelector( '.contents' ),
+
+				// [optional] The alignment of the menu (top/right/bottom/left)
+				position: Meny.getQuery().p || 'left',
+
+				// [optional] The height of the menu (when using top/bottom position)
+				height: 200,
+
+				// [optional] The width of the menu (when using left/right position)
+				width: 220,
+
+				// [optional] Distance from mouse (in pixels) when menu should open
+				threshold: 40
+			});
+
+			// API Methods:
+			// meny.open();
+			// meny.close();
+			// meny.isOpen();
+			
+			// Events:
+			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+			// Embed an iframe if a URL is passed in
+			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+				var contents = document.querySelector( '.contents' );
+				contents.style.padding = '0px';
+				contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+			}
+		</script>
+
+		
+
+	</body>
+</html>
