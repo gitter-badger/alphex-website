@@ -173,9 +173,13 @@ article h2 {
 	margin-bottom:5px;
 }
 
+div.work {
+	margin-top:20px;
+}
+
 div.workitem {
 	min-height:125px;
-	margin-bottom:20px
+	margin-bottom:40px
 }
 
 div.workitem img {
@@ -183,6 +187,6 @@ div.workitem img {
 }
 
 div.workwords {
-	margin-left:135px;
+	margin-left:140px;
 }
 
