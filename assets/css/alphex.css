@@ -30,6 +30,10 @@ body {
 	color: #222;
 }
 
+h1 {
+	font-family: 'Share Tech Mono', sans-serif;
+}
+
 a {
 	color: #999;
 	text-decoration: none;
