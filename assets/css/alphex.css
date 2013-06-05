@@ -31,8 +31,11 @@ body {
 }
 
 h1 {
-	
 	font-size:36px;
+	background-image: url('../images/titlebg.png');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+	padding-bottom:5px;
 }
 
 a {
@@ -199,6 +202,7 @@ div.workitem {
 
 div.workitem img {
 	float:left;
+	box-shadow: 1px 1px 3px #ccc;
 }
 
 div.workwords {
