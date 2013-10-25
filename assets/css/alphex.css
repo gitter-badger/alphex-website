@@ -203,6 +203,8 @@ div.workitem {
 div.workitem img {
 	float:left;
 	box-shadow: 1px 1px 3px #ccc;
+	width:125px;
+	height:125px;
 }
 
 div.workwords {
