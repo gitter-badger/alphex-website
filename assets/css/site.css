@@ -3,14 +3,9 @@
 	padding: 0;
 }
 
-html,
 body {
-	height: 100%;
-	overflow: hidden;
-}
-
-body {
-	background-color: #222;
+	width: 100%;
+	background-color: #fff;
 	font-family: 'Monda', Helvetica, sans-serif;
 	font-size: 16px;
 	color: #222;
@@ -75,7 +70,6 @@ h1 a {
  border-bottom: 1px solid #666;
 }
 
-
 /**
  * Main contents area
  */
@@ -116,37 +110,45 @@ h1 a {
 	}
 
 
-article h2 {
-	margin-bottom:5px;
-	margin-top:20px;
-}
+	article h2 {
+		margin-bottom:5px;
+		margin-top:20px;
+	}
 
-div.work {
-	margin-top:20px;
-}
+	div.work {
+		margin-top:20px;
+	}
 
-div.workitem {
-	min-height:125px;
-	margin-bottom:40px
-}
+	div.workitem {
+		min-height:125px;
+		margin-bottom:40px
+	}
 
-div.workitem img {
-	float:left;
-	box-shadow: 1px 1px 3px #ccc;
-	width:125px;
-	height:125px;
-}
+	div.workitem img {
+		float:left;
+		box-shadow: 1px 1px 3px #ccc;
+		width:125px;
+		height:125px;
+	}
 
-div.workwords {
-	margin-left:140px;
-}
+	div.workwords {
+		margin-left:140px;
+	}
 
-#simple-menu {
-	font-weight: bold;
-	color: #000;
-}
+	#simple-menu {
+		font-weight: bold;
+		color: #000;
+	}
 
-@media (min-width : 320px) and (max-width : 768px) {
+
+@media only screen and (min-width : 320px) and (max-width : 768px) {
+	body {
+		width: 100%;
+	}
+
+	/**
+	 * Navigation
+	 */
 
 	#navigation {
 		background-color: #fff;
@@ -155,34 +157,52 @@ div.workwords {
 	}
 
 	#navigation ul {
-		margin-left: 100px;
+		margin-left: 0px;
 	}
 
 	#navigation ul,
 	#navigation ul li {
 	 display: block;
+	 width: 99%
 	}
 
 	#navigation ul li {
 	 margin-right: 10px;
 	 padding: 5px 10px 5px 10px;
-	 border-left: 1px solid #666;
+	 border-left: 0px solid #666;
 	 border-right: 1px solid #666;
 	 border-bottom: 1px solid #666;
 	}
 
 	.contents {
-		background-color: red;
-		max-width: 480px;
-		width: 100%;
+		padding: 5px;
+	}
+
+	div.work {
+		margin-top:20px;
+	}
+
+	div.workitem {
+		min-height:125px;
+		margin-bottom:40px
 	}
 
 	div.workitem img {
-		float: none;
+		float:none;
+		box-shadow: 1px 1px 3px #ccc;
+		max-width:100%;
+		width: 400px;
+		height: auto;
 	}
 
 	div.workwords {
-		margin: 0px;
+		margin-left:0px;
 	}
 
+
 }
+@media only screen and (min-width : 480px) and (max-width : 595px) {/*--- Mobile landscape ---*/}
+@media only screen and (min-width : 595px) and (max-width : 690px) {/*--- Small tablet portrait ---*/}
+@media only screen and (min-width : 690px) and (max-width : 800px) {/*--- Tablet portrait ---*/}
+@media only screen and (min-width : 800px) and (max-width : 1024px) {/*--- Small tablet landscape ---*/}
+@media only screen and (min-width : 1024px) and (max-width : 1224px) {/*--- Tablet landscape --- */}
