@@ -1,6 +1,6 @@
 
 /**
- * The CSS in this file is for styling the demo page, 
+ * The CSS in this file is for styling the demo page,
  * Meny's critical styles (such as transforms) are applied
  * via JavaScript.
  *
@@ -14,7 +14,7 @@
 	padding: 0;
 }
 
-html, 
+html,
 body {
 	height: 100%;
 	overflow: hidden;
@@ -24,7 +24,6 @@ body {
 	background-color: #222;
 	/*background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAGklEQVQIW2NkYGD4D8SMQAwGcAY2AbBKDBUAVuYCBQPd34sAAAAASUVORK5CYII=);*/
 	background-repeat: repeat;
-
 	font-family: 'Monda', Helvetica, sans-serif;
 	font-size: 16px;
 	color: #222;
@@ -52,7 +51,7 @@ a {
 		color: #333;
 	}
 
-h1, 
+h1,
 h2 {
 	font-size: 24px;
 }
@@ -62,89 +61,32 @@ h1 a {
 	font-size: 26px;
 }
 
-.meny {
-	display: none;
-	padding: 20px;
-	overflow: auto;
-	background: #ccc;
-	color: #eee;
-
-	-webkit-box-sizing: border-box;
-	   -moz-box-sizing: border-box;
-	        box-sizing: border-box;
-}
-	.meny ul {
-		margin-top: 10px;
-	}
-		.meny ul li {
-			display: inline-block;
-			width: 200px;
-			list-style: none;
-			font-size: 20px;
-			padding: 3px 10px;
-		}
-			.meny ul li:before {
-				content: '-';
-				margin-right: 5px;
-				color: rgba( 255, 255, 255, 0.2 );
-			}
-
-			.meny li a {
-				color:#333;
-			}
-
-			.meny li a:hover {
-				color:#999;
-			}
-
 /**
- * Hint graphic that appears while menu is inactive
+ * Navigation
  */
-.meny-arrow {
-	position: absolute;
-	z-index: 10;
 
-	border: 20px solid transparent;
+ #navigation {
+	 background-color: #fff;
+	 padding-bottom: 20px;
+ }
 
-	-webkit-transition: opacity 0.4s ease 0.4s; 
-	   -moz-transition: opacity 0.4s ease 0.4s; 
-	    -ms-transition: opacity 0.4s ease 0.4s; 
-	     -o-transition: opacity 0.4s ease 0.4s; 
-	        transition: opacity 0.4s ease 0.4s;
+#navigation ul {
+	margin-left: 100px;
 }
-	.meny-left .meny-arrow {
-		left: 20px;
-		top: 55px;
-		margin-top: -16px;
-		border-left: 20px solid #333;
-	}
-	.meny-right .meny-arrow {
-		right: 14px;
-		top: 50%;
-		margin-top: -16px;
-		border-right: 16px solid #333;
-	}
-	.meny-top .meny-arrow {
-		left: 50%;
-		top: 14px;
-		margin-left: -16px;
-		border-top: 16px solid #333;
-	}
-	.meny-bottom .meny-arrow {
-		left: 50%;
-		bottom: 14px;
-		margin-left: -16px;
-		border-bottom: 16px solid #333;
-	}
-	.meny-active .meny-arrow {
-		opacity: 0;
 
-		-webkit-transition: opacity 0.2s ease; 
-		   -moz-transition: opacity 0.2s ease; 
-		    -ms-transition: opacity 0.2s ease; 
-		     -o-transition: opacity 0.2s ease; 
-		        transition: opacity 0.2s ease;
-	}
+ #navigation ul,
+ #navigation ul li {
+	 display: inline;
+ }
+
+ #navigation ul li {
+	 margin-right: 10px;
+	 padding: 5px 10px 5px 10px;
+	 border-left: 1px solid #666;
+	 border-right: 1px solid #666;
+	 border-bottom: 1px solid #666;
+ }
+
 
 /**
  * Main contents area
