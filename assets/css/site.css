@@ -43,6 +43,22 @@ h1 a {
 	font-size: 26px;
 }
 
+.logo h1,
+body.internal article h1 a,
+body.front article h1 a {
+	display:none;
+}
+
+.logo,
+body.internal article h1,
+body.front article h1 {
+	background-image:url("../images/alphex_logo.png");
+	background-size: 400px auto ;
+	background-repeat: no-repeat;
+	height:75px;
+	width:400px;
+}
+
 /**
  * Navigation
  */
